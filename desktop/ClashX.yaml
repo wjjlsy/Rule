@@ -152,22 +152,22 @@ Proxy:
 # 代理组策略
 Proxy Group:
 # url-test 可以自动选择与指定 URL 测速后，延迟最短的服务器
-#- { name: "auto", type: url-test, proxies: ["1","2"，“3”，“4”],url: "https://www.bing.com", interval: 300 }
+#- { name: "auto", type: url-test, proxies: ["1","2"，“3”],url: "https://www.bing.com", interval: 300 }
 
 # fallback 可以尽量按照用户书写的服务器顺序，在确保服务器可用的情况下，自动选择服务器
-#- { name: "fallback-auto", type: fallback, proxies: ["1","2"，“3”，“4"], url: "https://www.bing.com", interval: 300 }
+#- { name: "fallback-auto", type: fallback, proxies: ["1","2"，“3”], url: "https://www.bing.com", interval: 300 }
 
 # load-balance 可以使相同 eTLD 请求在同一条代理线路上
-#- { name: "load-balance", type: load-balance, proxies: ["1","2"，“3”，“4"] }
+#- { name: "load-balance", type: load-balance, proxies: ["1","2"，“3”] }
 
 # 代理节点选择
 # select 用来允许用户手动选择 代理服务器 或 服务器组
 # 您也可以使用 RESTful API 去切换服务器，这种方式推荐在 GUI 中使用
 
 #手动
-#- { name: "Proxy", type: select, proxies: ["1","2"，“3”，“4"] }
+#- { name: "Proxy", type: select, proxies: ["1","2"，“3”] }
 #自动
-#- { name: "Proxy", type: select, proxies: ["1","2"，“3”，“4","auto"] }
+#- { name: "Proxy", type: select, proxies: ["1","2"，“3”,"auto"] }
 
 # 白名单模式 PROXY，黑名单模式 DIRECT
 #- { name: "Final", type: select, proxies: ["PROXY","DIRECT"] }
@@ -176,10 +176,10 @@ Proxy Group:
 #- { name: "Apple", type: select, proxies: ["DIRECT","PROXY"] }
 
 # 国际流媒体服务
-#- { name: "GlobalMedia", type: select, proxies: ["PROXY","1","2","3","4"] }
+#- { name: "GlobalMedia", type: select, proxies: ["PROXY","1","2","3"] }
 
 # 大陆流媒体面向港澳台限定服务
-#- { name: "HKMTMedia", type: select, proxies: ["DIRECT","1","2","3","4"] }
+#- { name: "HKMTMedia", type: select, proxies: ["DIRECT","1","2","3"] }
 
 # 运营商及声名狼藉网站劫持
 #- { name: "Hijacking", type: select, proxies: ["REJECT","DIRECT"] }
