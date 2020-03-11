@@ -260,6 +260,7 @@ DOMAIN-KEYWORD,whatsapp,Proxy
 # Advertising 广告
 # > General
 DOMAIN-KEYWORD,adservice,REJECT
+DOMAIN-SUFFIX,api.exc.mob.com/errconf,REJECT
 DOMAIN-SUFFIX,api.applink.mob.com,REJECT
 DOMAIN-SUFFIX,pic.app.zxwsh.com/_20200310174734_5e67623678987.png,REJECT
 DOMAIN-SUFFIX,adcolony.com,REJECT
