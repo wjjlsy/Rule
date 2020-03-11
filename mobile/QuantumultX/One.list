@@ -260,7 +260,8 @@ DOMAIN-KEYWORD,whatsapp,Proxy
 # Advertising 广告
 # > General
 DOMAIN-KEYWORD,adservice,REJECT
-
+DOMAIN-SUFFIX,api.applink.mob.com,REJECT
+DOMAIN-SUFFIX,pic.app.zxwsh.com,REJECT
 DOMAIN-SUFFIX,adcolony.com,REJECT
 DOMAIN-SUFFIX,adinall.com,REJECT
 DOMAIN-SUFFIX,admaster.com.cn,REJECT
